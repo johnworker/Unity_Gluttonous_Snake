@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+
+namespace Leo
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameManager : MonoBehaviour
     {
-        
+        public static GameManager m_Main = null;
+
+        public SnackManager m_SnackManager = null;
+
+        private void Awake()
+        {
+            m_Main = this;
+        }
+
+        public void EatFood(GameObject eventObj)
+        {
+            m_SnackManager.EatFood(eventObj);
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
