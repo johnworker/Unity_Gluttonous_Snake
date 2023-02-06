@@ -14,14 +14,15 @@ namespace Leo
 
         public List<GameObject> m_Allbody = new List<GameObject>();
 
+        // 移動方向
+        private enum Direction
+        {
+            Left,Right,Up,Down
+        }
+
         #endregion
 
         #region 事件
-        void Start()
-        {
-
-        }
-
         void Update()
         {
             if (m_NowMoveTime < 0) 
