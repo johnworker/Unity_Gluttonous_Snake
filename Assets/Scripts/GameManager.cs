@@ -11,8 +11,6 @@ namespace Leo
 
         public SnakeManager m_SnakeManager = null;
 
-        public FoodManager m_FoodManager = null;
-
         private void Awake()
         {
             m_Main = this;
@@ -21,11 +19,6 @@ namespace Leo
         public void EatFood(GameObject eventObj)
         {
             m_SnakeManager.EatFood(eventObj);
-        }
-
-        private void SpawnFood()
-        {
-            m_FoodManager
         }
     }
 
