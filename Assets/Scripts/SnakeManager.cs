@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Leo
 {
-    public class SnackManager : MonoBehaviour
+    public class SnakeManager : MonoBehaviour
     {
         #region 資料
         // 移動間格時間

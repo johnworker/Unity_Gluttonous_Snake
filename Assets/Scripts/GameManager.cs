@@ -9,7 +9,9 @@ namespace Leo
     {
         public static GameManager m_Main = null;
 
-        public SnackManager m_SnackManager = null;
+        public SnakeManager m_SnakeManager = null;
+
+        public FoodManager m_FoodManager = null;
 
         private void Awake()
         {
@@ -18,9 +20,13 @@ namespace Leo
 
         public void EatFood(GameObject eventObj)
         {
-            m_SnackManager.EatFood(eventObj);
+            m_SnakeManager.EatFood(eventObj);
         }
 
+        private void SpawnFood()
+        {
+            m_FoodManager
+        }
     }
 
 }
